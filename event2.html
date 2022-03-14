@@ -22,7 +22,10 @@
     <button id='btn2' >事件2，按我</button>
     <button id='btn3' >事件3，按我</button>
     <button id='btn4' >事件4，按我</button>
-    <button id='btn5' >事件5，按我</button>
+    <button id='btn5' onclick="gtag.event('view_header_home', {
+    'event_category': 'view home',
+    'event_label': 'home'
+  })" >事件5，按我</button>
     <button id='btn6' onclick="gtag('event', 'aaa', {
   'event_category' : 'bbb',
   'event_label' : 'ccc'
